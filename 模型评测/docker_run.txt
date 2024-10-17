@@ -1,0 +1,8 @@
+docker run --gpus all --runtime=nvidia \
+-v /home/wangjianwei/blue/test/pics:/usr/input_picture \
+-v /home/wangjianwei/blue/test/result:/usr/output_dir \
+-e INPUTDIR=/usr/input_picture \
+-e OUTPUTDIR=/usr/output_dir \
+--name 容器名 \
+-it $IMAGE:$TAG \
+sh /order/detect.sh
