@@ -4,5 +4,5 @@ docker run --gpus all --runtime=nvidia \
 -e INPUTDIR=/usr/input_picture \
 -e OUTPUTDIR=/usr/output_dir \
 --name 容器名 \
--it $IMAGE:$TAG \
+-it $IMAGE:$TAG  \
 sh /order/detect.sh
