@@ -1,4 +1,0 @@
-#image
-docker save -o *.tar imageID
-docker load -i *.tar
-
