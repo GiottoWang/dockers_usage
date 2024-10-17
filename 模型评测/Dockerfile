@@ -17,7 +17,7 @@ RUN apt-get update && \
     apt-get install -y libgl1-mesa-glx && \
     apt-get install -y libglib2.0-0
 
-#创建 Python3 到 python 命令的软链接
+#创建 Python3 到 python 的软链接
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 #安装 Python 包
 RUN pip3 install --upgrade pip && \
