@@ -1,0 +1,13 @@
+sudo docker run -d --net=host \
+--gpus all \
+--name=ftp-test \
+-v /home/blue/result:/home/blue/result \
+-p 27316:27316 \
+-e OUTPUTDIR=/home/blue/result  \
+-e SERVERPORT=27316   \
+-e FTPURL=ftps://192.168.1.136:21/  \
+-e FTPUSRPASSWD=FTP_test:123456  \
+-m 30g \
+--restart="always" \
+-it $IMAGEID \
+sh /order/run.sh
