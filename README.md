@@ -15,9 +15,9 @@
 docker build --pull = false -t $IMAGE:$TAG .
 ```
 
-pull=false 可以从本地拉取基础镜像
-\$IMAGE:$TAG 是镜像名和标签，例如 *test:v1*
-. 是将该目录下的所有文件复制到镜像中
+`pull=false` 可以从本地拉取基础镜像  
+`$IMAGE:$TAG` 是镜像名和标签，例如 `test:v1`  
+`.` 是将该目录下的所有文件复制到镜像中
 
 ## 清理缓存
 
